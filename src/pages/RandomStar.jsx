@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { shittyStars } from "../utils/product-utils";
+import CelebrityCard from "../components/CelebrityCard";
 
 
 function RandomStar () {
@@ -12,11 +13,9 @@ function RandomStar () {
     return (
         <>
         <Header />
-         <h1>Random spécimen</h1>
-        
-            <h3>{randomCelebrity.name}</h3>
-            <p>{randomCelebrity.bio}</p>
-            <img src={randomCelebrity.img} alt={randomCelebrity.name}/>
+
+         <h1>Random</h1>
+            <CelebrityCard star={randomCelebrity} />
                 
         <Footer />
         </>

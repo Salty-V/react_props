@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/touslesdingos" element={<AllCelebrities />} />
-          <Route path="/dingosdetails" element={<CelebritiesDetails />} />
-          <Route path="/randomstar" element={<RandomStar />} />
+          <Route path="/all" element={<AllCelebrities />} />
+          <Route path="/details" element={<CelebritiesDetails />} />
+          <Route path="/random" element={<RandomStar />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { shittyStars } from "../utils/product-utils";
+import CelebrityCard from "../components/CelebrityCard";
 
 function AllCelebrities () {
 
@@ -8,14 +9,10 @@ function AllCelebrities () {
         <>
         <Header />
 
-            <h1>Bienvenue au zoo</h1>
-           {shittyStars.map(star => (
-                <>
-                    <h3>{star.name}</h3>
-                    <p>{star.bio}</p>
-                    <img src={star.img} alt={star.name}/>
-                </>
-           ))}
+            <h1>Welcome</h1>
+           {shittyStars.map(star => { 
+            return <CelebrityCard star={star}/>
+    })}
         
         <Footer />
         </>
