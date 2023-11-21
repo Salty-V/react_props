@@ -20,7 +20,7 @@ function HomePage() {
                 {mostRecentPublishedSS.map(star => {return <CelebrityCard star={star}/>
                 })}
 
-            <h1>Choosen one</h1>
+            <h1>Choosen ones</h1>
                 {pickedByTeam.map(star => { return <CelebrityCard star={star}/>
                 })}
 
