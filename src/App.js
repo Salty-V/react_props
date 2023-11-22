@@ -5,6 +5,7 @@ import AllCelebrities from './pages/AllCelebrities';
 import CelebritiesDetails from './pages/CelebritiesDetails';
 import RandomStar from './pages/RandomStar';
 import Presentateurs from './pages/Presentateurs';
+import UseStatePage from './pages/UseStatePage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/all/:id" element={<CelebritiesDetails />} />
           <Route path="/random" element={<RandomStar />} />
           <Route path="/presentateurs" element={<Presentateurs />} />
+          <Route path="/button" element={<UseStatePage />} />
         </Routes>
       </BrowserRouter>
     </>
