@@ -44,12 +44,20 @@ function Header ({currentPage}) {
                         <Link to="/">Home</Link>
                     )}
                     </li>
+
+                    <li>
+                    {currentPage === "presentateurs" ? ( 
+                    <strong>
+                        <Link to="/presentateurs">Presentateurs</Link>
+                    </strong>
+                    ) : (
+                        <Link to="/presentateurs">Presentateurs</Link>
+                    )}
+                    </li>
                 </ul>
             </nav>
         </header>
     )
 }
-
-// // // 
 
 export default Header;
