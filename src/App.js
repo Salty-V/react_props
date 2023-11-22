@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/all" element={<AllCelebrities />} />
-          <Route path="/details" element={<CelebritiesDetails />} />
+          <Route path="/all/:id" element={<CelebritiesDetails />} />
           <Route path="/random" element={<RandomStar />} />
         </Routes>
       </BrowserRouter>

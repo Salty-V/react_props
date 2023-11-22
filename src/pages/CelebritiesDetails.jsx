@@ -5,10 +5,9 @@ import { useParams } from "react-router-dom";
 import CelebrityCard from "../components/CelebrityCard";
 
 function CelebrityDetails () {
-    const {starId} = useParams() // créer la variable qui permet de créer id integrer avec useParams()
-    const starDetails = shittyStars.find(star => { return star.id === starId }).value; // créer une nouvelle variable qui va parcourir (find) le tableau (shittyStars) pour matcher (===) l'id généré par l'integrer (idInt) avec l'id récupéré dans le tableau (star.id)
+    const {id} = useParams() // useParams() permet d'indiquer ce qu'on cherche dans l'url
 
-    console.log(starId)
+    const starDetails = shittyStars.find(star => { return star.id === id }) // créer une nouvelle variable qui va parcourir (find) le tableau (shittyStars) pour matcher (===) l'id généré par l'integrer (idInt) avec l'id récupéré dans le tableau (star.id)
 
     return (
         <>
