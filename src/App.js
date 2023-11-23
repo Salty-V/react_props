@@ -8,6 +8,7 @@ import Presentateurs from './pages/Presentateurs';
 import UseStatePage from './pages/UseStatePage';
 import MessageForm from './pages/MessageForm';
 import LikesPage from './pages/LikesPage';
+import CocktailsPage from './pages/CocktailsPage';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Route path="/button" element={<UseStatePage />} />
           <Route path="/message" element={<MessageForm />} />
           <Route path="/likes" element={<LikesPage />} />
+          <Route path="/cocktails" element={<CocktailsPage />} />
+
         </Routes>
       </BrowserRouter>
     </>
