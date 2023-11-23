@@ -3,13 +3,30 @@ import { useState } from "react";
 function LikesPage () {
 
     const [likesCount, setLikesCount] = useState (0)
+    const [displayAlert, setDisplayAlert] = useState(false)
 
     const onButtonClick = () => {
+       if(likesCount < 5) {
         setLikesCount(likesCount + 1)
+       } else {
+        setLikesCount(likesCount)
+        setDisplayAlert(true)
+       }
+    }
+
+    const alertClosing = () => {
+        setDisplayAlert(false)
     }
 
     return (
         <main>
+            {displayAlert &&
+                <>
+                <p> Nombre de like max atteint</p>
+                <button onClick={alertClosing}>Close n reset</button>
+                </>
+                }
+
             <button onClick={onButtonClick}>Like</button>
             <p>Vous avez liké {likesCount} fois</p>
         </main>
